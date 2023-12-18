@@ -36,11 +36,9 @@
                 response.sendRedirect("RegistFailed.jsp");
             }
             
-            String username = request.getParameter("username");
-            String ps = request.getParameter("passwd");
         %>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        
     </body>
 </html>
