@@ -16,12 +16,12 @@
             alert("註冊成功!");
 //            location.href="http://localhost:8080/Login/login.jsp";    
         </script>
-        <% if(get.application.getAttribute() != null){
-                out.print("註冊帳號:"+get.application.getAttribute("Map01"));
+        <% if(application.getAttribute("Map01") != null){
+                out.print("註測成功的成果:"+application.getAttribute("Map01"));
                
             }
             else{
-                out
+              out.print("沒成功");
             }
              %>
     </body>
