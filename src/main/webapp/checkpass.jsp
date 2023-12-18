@@ -16,13 +16,19 @@
             String ps;
             HashMap<String,String> Map01 = new HashMap<>();
             HttpSession session ;
+            
             public boolean checkMap(String u,String p){
-                if(Map01.containsKey(u)){
-                    if(Map01.get(u).equals(p)){
-                        return true;
+                if(Map01 != null){
+                    if(Map01.containsKey(u)){
+                        if(Map01.get(u).equals(p)){
+                            return true;
+                        }
                     }
+                    return false;
                 }
-                return false;
+                else{
+                    return false;
+            }
             }
             %>
        
