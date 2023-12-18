@@ -28,14 +28,14 @@
                 }
                 else{
                     return false;
-            }
+                }
             }
             %>
        
          <%
             session = request.getSession();
-            Map01 = (HashMap)application.getAttribute("Map01");
-            %>        
+            Map01 = (HashMap<String,String>)application.getAttribute("Map01");
+            %>       
         
         <%
             username = request.getParameter("username");

@@ -29,8 +29,8 @@
            
             if(psR.equals(checkPR)){
                  Map01.put("userR","psR");
-                 response.sendRedirect("RegistSusscess.jsp");
                  application.setAttribute("Map01", Map01);
+                 response.sendRedirect("RegistSusscess.jsp");
             }
             else{
                 response.sendRedirect("RegistFailed.jsp");
